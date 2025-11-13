@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    background: #111827;
+    color: #fff;
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    position: relative;
+   
+}
+
+.bg-cursor-effect {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    background: radial-gradient(circle 120px at var(--x, 50vw) var(--y, 50vh), rgba(56,189,248,0.22) 0, rgba(56,189,248,0.18) 40px, rgba(56,189,248,0.10) 80px, transparent 120px);
+    animation: waterRipple 2.2s infinite alternate;
+    transition: background 0.2s;
+}
+
+@keyframes waterRipple {
+    0% { filter: blur(0px) brightness(1); }
+    50% { filter: blur(2px) brightness(1.08); }
+    100% { filter: blur(0px) brightness(1); }
+}
+
+@media (max-width: 600px) {
+    .bg-cursor-effect {
+        background: radial-gradient(circle 60px at var(--x, 50vw) var(--y, 50vh), rgba(56,189,248,0.22) 0, rgba(56,189,248,0.18) 20px, rgba(56,189,248,0.10) 40px, transparent 60px);
+        animation: waterRipple 2.2s infinite alternate;
+    }
+}
+
+.bg-shape {
+    position: fixed;
+    z-index: 0;
+    opacity: 0.18;
+    pointer-events: none;
+    border-radius: 50%;
+    animation: floatShape 12s ease-in-out infinite alternate;
+}
+
+.bg-shape1 {
+    width: 120px;
+    height: 120px;
+    background: #38bdf8;
+    top: 10vh;
+    left: 8vw;
+    animation-delay: 0s;
+}
+
+.bg-shape2 {
+    width: 80px;
+    height: 80px;
+    background: #ffb347;
+    top: 70vh;
+    left: 70vw;
+    animation-delay: 2s;
+}
+
+.bg-shape3 {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    top: 40vh;
+    left: 50vw;
+    animation-delay: 4s;
+}
+
+@keyframes floatShape {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-30px) scale(1.1); }
+}
+
+.bg-raindrop {
+    position: fixed;
+    top: 0;
+    width: 3px;
+    height: 18px;
+    background: linear-gradient(180deg, #38bdf8 60%, #fff 100%);
+    border-radius: 2px;
+    opacity: 0.45;
+    z-index: 0;
+    pointer-events: none;
+    animation: rainDropFall 2.5s linear infinite;
+    filter: blur(3.5px);
+    box-shadow: 0 0 8px 2px #38bdf844;
+    transition: transform 0.18s;
+}
+
+@keyframes rainDropFall {
+    0% { top: -20px; opacity: 0.7; }
+    90% { opacity: 0.7; }
+    100% { top: 100vh; opacity: 0; }
+}
+
+.bg-waterdrop {
+    display: none;
+}

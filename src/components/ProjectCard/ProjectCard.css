@@ -1,0 +1,92 @@
+.project-card {
+    background: linear-gradient(180deg, hsl(215, 28%, 22%) 0%, hsl(221, 42%, 14%) 100%);
+    padding: 25px;
+    border-radius: 1rem;
+    border: 1px solid #374151;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; 
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:hsl(220, 60%, 70%);
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: hsl(220, 15%, 56%);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+    display: flex;
+    align-items: center;
+    background-color: #374151;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    color: hsl(220, 15%, 56%);
+    font-weight: 500;
+}
+
+.tech-icon {
+    
+    margin-right: 5px;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: auto; 
+    padding-top: 15px;
+}
+
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.9rem;
+}
+
+.link-button svg {
+    margin-right: 8px;
+}
+
+.link-button:first-child {
+    background-color: transparent;
+    border: 2px solid hsl(220, 60%, 50%);
+    color: hsl(220, 60%, 50%);
+}
+
+.link-button:first-child:hover {
+    background-color: hsl(220, 60%, 50%);
+    color: hsl(220, 15%, 56%);
+}
+
+.link-button.live {
+    background-color: #10b981; 
+    color: #1f2937; 
+}
+
+.link-button.live:hover {
+    background-color: #0d996e;
+}

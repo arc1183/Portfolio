@@ -1,0 +1,227 @@
+
+.ee-container {
+    background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+    color: hsl(220, 60%, 70%);
+    
+    display: flex;
+    flex-direction: column; 
+    
+    width: 90%;
+    min-width: 0;
+    
+    border-radius: 2rem;
+    padding: 2.5rem;
+    
+    box-sizing: border-box;
+    margin: 2rem auto; 
+    
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4); 
+}
+
+
+
+.ee-tabs {
+    display: flex;
+    justify-content: left;
+   
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #374151;
+    padding-bottom: 0px;
+
+}
+
+.ee-tab-button {
+    padding: 1rem 1.2rem;
+    font-size: 2.5rem;
+    width:50%;
+    font-weight: 600;
+    cursor: pointer;
+    background:  hsl(215, 28%, 18%);
+    color: hsl(220, 20%, 40%);
+    border: none;
+    border-radius: 0; 
+    border-top-left-radius: 1rem; 
+    border-top-right-radius:1rem;
+   
+    transition: color 0.3s ease;
+}
+
+.ee-tab-button:hover {
+    color: #f3f4f6; 
+}
+.ee-tabs button:first-child {
+    border-top-right-radius: 0; 
+}
+.ee-tabs button:last-child {
+    border-top-left-radius: 0; 
+}
+
+.ee-tab-button.active {
+    color: hsl(220, 60%, 70%);
+    background-color: #2a3848;
+
+    border-bottom: 2px solid hsl(220, 60%, 70%);
+}
+
+.ee-tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px; 
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: hsl(220, 60%, 70%); 
+    border-radius: 2px;
+}
+
+.ee-content {
+   background-color: #2a3848; 
+
+    padding: 0; 
+    margin: 0;
+
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+   
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+.ee-card {
+
+    
+    
+    padding: 25px; 
+    margin-bottom: 0 !important; 
+    border: none;
+    border-radius: 0; 
+
+    border-bottom: 1px solid #374151; 
+}
+.ee-card:first-child {
+  
+    padding-top: 30px; 
+}
+.ee-card:not(:last-child) {
+   background: linear-gradient(180deg, hsl(215, 28%, 22%) 0%, hsl(221, 42%, 14%) 100%);
+    border-bottom: 1px solid #374151; 
+}
+
+.ee-card:last-child {
+    background: linear-gradient(180deg, hsl(215, 28%, 22%) 0%, hsl(221, 42%, 14%) 100%); 
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    border-bottom: none;
+
+    padding-bottom: 30px; 
+}
+.ee-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ee-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: hsl(220, 60%, 70%);
+}
+
+.ee-card-duration {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: hsl(220, 60%, 70%);
+}
+
+.ee-card-institution {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: hsl(220, 60%, 50%);
+    margin-bottom: 15px;
+}
+
+
+.ee-points {
+    list-style: none; 
+    padding-left: 0;
+}
+
+.ee-points li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: hsl(220, 15%, 56%);
+}
+.ee-points li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: hsl(220, 60%, 70%);
+    font-weight: bold;
+}
+
+.ee-certs {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ee-certs li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: hsl(220, 15%, 56%);
+}
+
+.cert-bullet {
+    color: hsl(220, 60%, 70%);
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .ee-container {
+        padding: 1rem; 
+        border-radius: 1rem;
+        width: 95%; 
+    }
+    
+    .ee-tab-button {
+        padding: 12px 5px; 
+        font-size: 1.1rem; 
+        width: 50%; 
+    
+
+    .ee-tab-button span {
+        font-size: 0.9rem;
+    }
+    
+
+    .ee-points li,
+    .ee-certs li {
+        font-size: 1rem; 
+    }
+    
+ 
+    .ee-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .ee-card-duration {
+    
+        margin-top: 5px; 
+    }
+
+    .ee-card-title {
+        font-size: 1.1rem;
+    }
+}}

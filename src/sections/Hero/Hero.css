@@ -1,0 +1,111 @@
+.hero-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 1rem; 
+}
+.hero-container {
+    
+    background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero-title {
+    flex: 1 1 300px;
+    color: #fff;
+    font-size: 250%;
+    font-weight: 700;
+    text-align: center;
+    
+    margin-right: 2rem;
+}
+
+.hero-ProfilePic {
+    max-width: 45%;
+    max-height: 45%;
+    min-width: 10%;
+    min-height: 10%;
+    
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid hsl(220, 60%, 70%);
+    transition: all 0.4s ease-in-out;
+    
+    
+}
+.hero-ProfilePic:hover {
+    animation: border-pulse 1.5s infinite cubic-bezier(0.66, 0.0, 0.33, 1.0);
+}
+@keyframes border-pulse {
+    0% {
+        box-shadow: 0 0 0 0 hsl(215, 28%, 22%);
+    }
+    70% {
+
+        box-shadow: 0 0 0 .5rem hsl(220, 60%, 70%); 
+    }
+    100% {
+        box-shadow: 0 0 0 0 hsl(221, 42%, 14%);
+}}
+
+.hero-title-secondary {
+        flex: 1 1 300px;
+        color: hsl(220, 60%, 70%);
+        font-size: 2.5rem;
+        font-weight: 700;
+        
+        margin-right: 2rem;
+}
+.hero-title-third {
+        flex: 1 1 300px;
+        color: hsl(220, 60%, 50%);
+        font-size: 2rem;
+        font-weight: 400;
+        
+        margin-right: 2rem;
+}
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
+        width: 95%;
+    }
+    
+    .hero-ProfilePic {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+        max-width: 100px;
+        max-height: 100px;
+        order: -1;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-title {
+        flex-basis: auto;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 0.25rem;
+    }
+    
+    .hero-title-secondary {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

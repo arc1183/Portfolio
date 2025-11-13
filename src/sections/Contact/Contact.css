@@ -1,0 +1,134 @@
+
+.contact-container {
+    background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+    color: #f3f4f6;
+    
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    
+    width: 90%;
+   
+    border-radius: 2rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    margin: 2rem auto; 
+    
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4); 
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: hsl(220, 60%, 70%);
+    border-bottom: 2px solid #374151;
+    padding-bottom: 10px;
+}
+
+.contact-intro-text {
+    font-size: 0.85rem;
+    color: hsl(220, 15%, 56%);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    
+}
+
+.email-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: hsl(220, 60%, 70%); 
+    color: #1f2937;
+    
+    padding: 15px 30px;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    margin-bottom: 3rem;
+}
+
+.email-button:hover {
+    background-color: hsl(220, 60%, 50%);
+    color:hsl(10, 23%, 90%);
+    transform: translateY(-2px);
+}
+
+.email-button svg {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.contact-details-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icon svg {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.social-icon.linkedin {
+    background-color: hsl(201, 50%, 35%);
+    color: hsl(10, 23%, 90%);
+}
+.social-icon.linkedin:hover{
+    background-color: hsl(220, 60%, 50%);
+    color: hsl(10, 23%, 90%);
+}
+.social-icon.github {
+    background-color: #333;
+    color: hsl(220, 15%, 70%);
+}
+.social-icon.github:hover {
+    background-color: hsl(10, 23%, 90%);
+    color: #333;
+}
+    
+.info-box p {
+    color: hsl(220, 15%, 56%);
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 2rem 1.5rem;
+    }
+    .social-links {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .social-icon {
+        width: 100%;
+        justify-content: center;
+    }
+    .info-box {
+        overflow: auto;
+    }
+}
