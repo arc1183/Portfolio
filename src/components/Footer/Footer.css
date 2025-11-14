@@ -39,7 +39,7 @@
 }
 
 .social-icons a {
-    color: #cbd5e1;
+    color: hsl(220, 15%, 56%);
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -56,7 +56,7 @@
 
 .footer-message {
     font-size: 0.95rem;
-    color: #a0aec0; 
+    color: hsl(220, 15%, 56%);
 }
 
 .footer-copyright {

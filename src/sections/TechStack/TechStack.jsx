@@ -63,7 +63,7 @@ const TechStack = () => {
     <section id="tech-stack" className="tech-section">
       <div className="tech-container">
         <h2 className="tech-title">
-          Technical Stack 🛠️
+          Technical Stack 
         </h2>
         
         <div className="tech-grid">

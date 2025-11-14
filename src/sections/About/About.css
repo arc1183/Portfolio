@@ -33,3 +33,17 @@
     color: hsl(220, 15%, 56%);
     text-indent: 0px; 
 }
+@media (max-width: 768px) {
+.about-title{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0.25rem;
+}
+.summary-paragraph{
+    font-size: 1rem;
+    text-align: justify;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+}

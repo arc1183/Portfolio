@@ -38,8 +38,13 @@
 
     grid-template-columns: 1fr; 
     gap: 30px; 
+
 }
 @media (min-width: 768px) {
+
+    
+    
+
     .projects-grid {
         grid-template-columns: repeat(2, 1fr); 
     }
@@ -50,3 +55,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .projects-title{
+        flex-basis: auto;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 0.25rem;
+    }
+}

@@ -28,7 +28,7 @@
 }
 
 .contact-intro-text {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: hsl(220, 15%, 56%);
     margin-bottom: 2.5rem;
     line-height: 1.6;
@@ -49,7 +49,7 @@
     font-weight: 700;
     transition: background-color 0.3s, transform 0.3s;
     text-decoration: none;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .email-button:hover {
@@ -67,13 +67,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     width: 100%;
 }
 
 .social-links {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .social-icon {
@@ -115,9 +115,29 @@
     margin-top: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .contact-container {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1rem;
+    }
+    .contact-title{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 0.25rem;
+    }
+    .contact-intro-text {
+        text-align: justify;
+        margin-bottom: 0;
+
+    }
+    .email-button {
+        width: 100%;
+        font-size: 1rem;
+        padding:  10px 15px;
+        margin: 10px;
+    }
+    .email-button svg {
+     font-size: 1rem;
     }
     .social-links {
         flex-direction: column;
@@ -130,5 +150,8 @@
     }
     .info-box {
         overflow: auto;
+    }
+    .info-box p {
+        font-size: .75rem;
     }
 }
